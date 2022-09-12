@@ -6,20 +6,24 @@ import moment from "moment";
 import { TRANSLATIONS_ZH } from "./zh/translations";
 import { TRANSLATIONS_EN } from "./en/translations";
 import { TRANSLATIONS_GU } from "./gu/translations";
+import { TRANSLATIONS_ARAB } from "./arab/translations";
  
 i18n
  .use(LanguageDetector)
  .use(initReactI18next)
  .init({
    resources: {
-     en: {
+    en: {
        translation: TRANSLATIONS_EN
-     },
-     zh: {
+    },
+    zh: {
        translation: TRANSLATIONS_ZH
-     },
-     gu: {
+    },
+    gu: {
         translation: TRANSLATIONS_GU
+    },
+    arab: {
+        translation: TRANSLATIONS_ARAB
       }
    },
    interpolation: {
